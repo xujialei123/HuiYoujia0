@@ -1,0 +1,44 @@
+@import'public';
+#denglu{
+    width:1068px;height:394px;margin: 98px auto;
+    a:first-child{display: block;float:left;margin-right: 150px;}
+    #method{float:left;width:450px;height: 338px;border:1px solid #e5e5e5 ;position: relative;
+    
+        input{font-size: 12px;color:#cfb7b7}
+       span{position: absolute;width:72px;height: 34px;top:-34px;left:76px;font-size: 18px;color:#e30f50;border-bottom: 1px solid #dc0f50;line-height: 34px;}
+       span:nth-of-type(2){left:302px;border: none;color:#666}
+       
+       li{width:305px;height: 40px;border: 1px solid #d6d6d6;line-height: 40px;}
+       li input{margin-left: 60px;}
+       form{position: absolute;}
+        .form1{left:71px;top:44px;
+        #ts{background: url(../image/error_bg.png) no-repeat left center;padding-left: 22px;color:#dc0f50}
+         li:first-of-type{background: url(../image/icon01.png) no-repeat 10px 10px;margin-bottom: 20px;}
+         li:nth-of-type(2){background:url(../image/icon02.png) no-repeat 10px 10px ;margin-bottom: 20px;}
+         p{font-size: 12px;color:#666;margin-bottom: 42px;
+         input{margin-right:6px}
+         a:first-of-type{margin-left: 12px;}
+         a:last-of-type{margin-left: 66px;}
+         a{font-size: 12px;color:#666}}
+         .dl{background:#dc0f50;color:#fff;text-align: center;line-height: 40px;}
+         .dl:hover{background: deeppink;}
+        
+}.form2{left:71px;top:10px;display: none;
+        p:first-child{font-size: 14px;color:#dc0f50;padding-left: 32px;background: url(../image/error_bg.png) no-repeat 5px center;margin-bottom: 20px;}
+        p:nth-child(2){font-size: 14px;color:#999;margin-bottom: 5px;}
+        li:first-of-type{margin-bottom: 20px;background: url(../image/icon01.png) no-repeat 10px 10px;
+        span{display: inline-block;width:90px;height: 40px;background: #dc0f50;text-align: center;line-height: 43px;color:#fff;position:static ;margin-left: 20px;font-size: 12px;}}
+        li:nth-of-type(2){margin-bottom: 20px;background:url(../image/icon02.png) no-repeat 10px 10px ;}
+        li:nth-of-type(3){background:url(../image/icon02.png) no-repeat 10px 10px ;margin-bottom: 10px;}
+        p{font-size: 12px;color:#666;margin-bottom: 30px;
+         input{margin-right:6px}
+         a:first-of-type{margin-left: 12px;}
+         a:last-of-type{margin-left: 66px;}
+         a{font-size: 12px;color:#666}}
+         .dl{background:#dc0f50;color:#fff;text-align: center;line-height: 40px;}
+         .dl:hover{background: deeppink;}
+           
+        }
+        
+    }
+}
