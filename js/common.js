@@ -17,6 +17,7 @@ define(function(){
 		$('body a').attr('href','product.html')
 		$('body .login').attr('href','login.html')
 		$('body .register').attr('href','register.html')
+		$('body .index').attr('href','../index.html')
 	}
 	return {
 		scroll:scroll,
