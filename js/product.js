@@ -11,6 +11,11 @@ define(function(){
 			li.find('img').attr('src','../image/'+i+'.jpg').css('border-top','none')
 			$('.rxb').append(li)
 		}
+		for(var i = 51;i<=70;i++){
+			var li=$("#like_box li:eq(0)").clone(true);
+			li.find('img').attr('src','../image/'+i+'.jpg')
+			$('#like_box ul').append(li)
+		}
 	}
 	function click(){
 //		var oLi = document.getElementById("product_list").getElementsByTagName('li')
@@ -39,6 +44,32 @@ define(function(){
 				
 			})
 		})
+		$('.page a').click(function(){
+			$(this).addClass('cur');
+		})
+		var left = 0;
+		$('#like_box .left').click(function(){
+			if(left==0){
+				left = -3570
+			}else{
+				left+=1190
+			}
+			$('#like_box ul').animate({'left':left})
+			return left
+		})
+		$('#like_box .right').click(function(){
+			if(left==-3570){
+				left = 0
+			}else{
+				left-=1190
+			}
+			$('#like_box ul').animate({'left':left})
+			return left
+		})
+		
+		$('#product_list a').attr('href','wupin.html')
+		$('.rxb a').attr('href','wupin.html')
+	
 	}
 	
 	return {

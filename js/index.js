@@ -140,6 +140,9 @@ define(function(){
 		$('body .login').attr('href','html/login.html')
 		$('body .register').attr('href','html/register.html')
 		$('body .index').attr('href',"index.html")
+		$('.gwc').click(function(){
+			location.href = 'html/cart.html'
+		})
 	}
 	
 	function time(){

@@ -18,6 +18,9 @@ define(function(){
 		$('body .login').attr('href','login.html')
 		$('body .register').attr('href','register.html')
 		$('body .index').attr('href','../index.html')
+		$('.gwc').click(function(){
+			location.href = 'cart.html'
+		})
 	}
 	return {
 		scroll:scroll,

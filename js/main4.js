@@ -12,7 +12,6 @@ require(['jquery','cookie','common','product'],function($,cookie,common,product)
 	$(function(){
 		common.scroll(),
 		common.link(),
-		
 		product.clone(),
 		product.click()
 		})

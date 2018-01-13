@@ -5,7 +5,7 @@ define(function(){
 		var qpw = null;
 		$('#mobile').blur(function(){
 			
-		var reg = /^((156)|(158)|(188)|(135)|(177)|(133))[0-9]{8}$/;
+		var reg = /^((156)|(158)|(188)|(135)|(177)|(133)|(155))[0-9]{8}$/;
 		if(reg.test($('#mobile').val())){
 			$('#mobile').siblings('span').html("");
 			pm=true
