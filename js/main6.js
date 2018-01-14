@@ -3,16 +3,18 @@ require.config({
 		'jquery':"jquery-1.11.3",
 		'cookie':"jquery.cookie",
 		'common':'common',
-		'login':'login'
+		'cart':'cart'
+		
 		
 	}
 })
-require(['jquery','cookie','common','login'],function($,cookie,common,login){
+require(['jquery','cookie','common','cart'],function($,cookie,common,cart){
 	$(function(){
-		common.scroll();
-		common.link(),
-		login.blur()
 		common.loadpage()
+		common.scroll()
+		common.link()
+		cart.add()
+		
 		})
-	
+
 })

@@ -224,7 +224,8 @@ header {
 nav {
   width: 1263px;
   height: 40px;
-  border-bottom: 2px solid #db1052; }
+  border-bottom: 2px solid #db1052;
+  margin: 0 auto; }
   nav li {
     float: left; }
   nav a {

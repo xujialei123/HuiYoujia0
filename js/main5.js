@@ -3,16 +3,17 @@ require.config({
 		'jquery':"jquery-1.11.3",
 		'cookie':"jquery.cookie",
 		'common':'common',
-		'login':'login'
+		'wupin':'wupin'
+		
 		
 	}
 })
-require(['jquery','cookie','common','login'],function($,cookie,common,login){
+require(['jquery','cookie','common','wupin'],function($,cookie,common,wupin){
 	$(function(){
-		common.scroll();
-		common.link(),
-		login.blur()
+		common.scroll()
+		common.link()
 		common.loadpage()
+		wupin.play()
 		})
-	
+
 })

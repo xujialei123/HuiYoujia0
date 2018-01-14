@@ -13,7 +13,7 @@
 		<meta charset="UTF-8">
 		<title>商品列表</title>
 		<link rel="stylesheet" type="text/css" href="../css/wupin.css"/>
-		<script src="../js/require.js" defer async="true" data-main='../js/main4' type="text/javascript" charset="utf-8"></script>
+		<script src="../js/require.js" defer async="true" data-main='../js/main5' type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		<header>
@@ -22,7 +22,7 @@
 			<a href="" class='register'>请登录</a>
 			<a href="" class='login'>免费注册</a>
 			
-			购物车<a href="">0</a>件
+			购物车<a href="" >0</a>件
 			<span class='my'>我的家有</span>
 			可用购物券<a href="">0</a>张
 			<a href="" class='sc'>我的收藏</a>
@@ -54,8 +54,7 @@
 			<div class="gwc">我的购物车<span>0</span>
 				<div>购物车中还没有商品，赶紧去选购吧 </div>
 			</div>
-			
-			
+		
 		</div>
 		<!--导航-->
 		<nav>
@@ -87,47 +86,51 @@
 			<div class="showimg">
 				<ul class='small'>
 					<span class='shang'></span>
-					<li><img src="" alt="" /></li>
-					<li><img src="" alt="" /></li>
-					<li><img src="" alt="" /></li>
-					<li><img src="" alt="" /></li>
-					<li><img src="" alt="" /></li>
 					<span class="xia"></span>
 				</ul>
 				<div class="big">
+					<span class="dang"></span>
+					<span class="mark"></span>
+					<img src="../image/s1.jpg" alt="" />
+					
+					
 				</div>
 			</div>
 			<div class="bigimg">
+				<img src="../image/s1.jpg" alt="" />
 			</div>
 			<div class="xinxi">
-				<h3>
+				<h3 data-id = "milk">
 					<span></span>
 					荷兰·牛栏奶粉Nutrilon 1段850G（海外版 2罐装）
 				</h3>
-				<p class="price">
-					<i>¥399.00</i>
-					<em>¥425.00</em>
-					<a href="">进入店铺</a>
-				</p>
-				<p class="num"><i>商品编号</i>    <em>8016449603</em></p>
-				<p class="yx"><i>月销</i>   <em>364件</em></p>
-				<p class="number">
-					<i>购买数量</i>
-					<a class='jian'>-</a>
-					<input type="text"  value="1"/>
-					<a class="jia">+</a>
-					<em>限购87件</em>
-				</p>
-				<p class="pow">
-					<span>海关监督</span>
-					<span>包邮</span>
-					<span>不支持7日无理由退货</span>
-				</p>
-				<div class="btn">
-					<span>加入购物车</span>
-					<span>立即购买</span>
+				<div class="xiangguan">
+					<p class="price">
+						<i class="jiage">¥399.00</i>
+						<em>¥425.00</em>
+						<a href="">进入店铺</a>
+					</p>
+					<p class="num"><i>商品编号</i>    <em>8016449603</em></p>
+					<p class="yx"><i>月销</i>   <em>364件</em></p>
+					<p class="number">
+						<i>购买数量</i>
+						<b>
+							<a class='jian' href="javascript:;">-</a>
+							<input type="text"  value="1" class="Num"/>
+							<a class="jia">+</a>
+						</b>
+						<em>限购87件</em>
+					</p>
+					<p class="pow">
+						<span>海关监督</span>
+						<span>包邮</span>
+						<span>不支持7日无理由退货</span>
+					</p>
+					<div class="btn">
+						<span class="add">加入购物车</span>
+						<span class="buy">立即购买</span>
+					</div>
 				</div>
-				
 			</div>
 		</div>
 		

@@ -12,6 +12,7 @@ require(['jquery','cookie','common','register'],function($,cookie,common,registe
 	$(function(){
 		common.scroll(),
 		common.link(),
+		common.loadpage(),
 		register.register()
 		})
 	

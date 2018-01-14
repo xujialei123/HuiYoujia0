@@ -40,7 +40,7 @@ ul{position:absolute;width:230px;height:559px;border:1px solid #e5e5e5;top:40px;
      #product_list{
          a:hover{text-decoration: none;}
          width:957px;height: 1700px;
-         li{width:214px;height: 310px;padding:0 10px;float:left;
+         li{width:214px;height: 310px;padding:0 10px;float:left;margin-bottom: 30px;
          
          img{width:200px;height: 200px;}
             p{font-size: 12px;color:#333;height: 44px;};
@@ -49,9 +49,23 @@ ul{position:absolute;width:230px;height:559px;border:1px solid #e5e5e5;top:40px;
             span{color:#666;font-size: 12px;}
          }
      }
+     .page{width: 700px;height: 38px;margin: 0 auto;
+            a:hover{text-decoration: none;background: #dc0f50;color: #fff;}
+          a{width: 38px;height: 37px;display: inline-block;border: 1px solid #e5e5e5;background: #fafafa;line-height:34px ;text-align: center;margin-right: 5px;}
+          span{display: inline-block;}
+          input{width:35px;height: 35px;border: 1px solid #e5e5e5;text-align: center;}
+          i{display: inline-block;}
+        .fanye{width: 74px;height: 37px;}
+        .pt{background: #dc0f50;color:#fff}
+        .p4{margin-right: 20px;}
+        .cur{background: #dc0f50;color:#fff}
+        
+     }
+     
      
 }
 .rxb{float:left;margin-left: 10px;
+a:hover{text-decoration: none;}
     li{width:134px;height:86px;border-top: 1px solid #e5e5e5;position: relative;padding: 10px 0 10px 96px;
     border-bottom:1px solid #e5e5e5; 
     p{font-size: 14px;margin-bottom: 28px;}
@@ -60,4 +74,21 @@ ul{position:absolute;width:230px;height:559px;border:1px solid #e5e5e5;top:40px;
         
     }
 }
+}
+#like_box{height: 362px;width: 1200px;margin:0 auto;position: relative;overflow: hidden;
+span{top:112px}
+    .hd{height: 21px;background: url(../image/hd_bg.jpg) repeat-x 88px bottom;}
+    h2{height: 22px;font-size: 22px;line-height: 22px;background: #fff;width: 88px;}
+    ul{width:4760px;height: 298px;position: absolute;top: 50px;
+        
+        li{float: left;width:200px;margin:0 24px 0 14px;
+            a:hover{text-decoration: none;}
+            p{width:200px;height: 50px;font-size: 12px;color:#333}
+            em{height: 27px;display: block;font-size: 14px;color:#dc0f50;
+                i{font-size: 8px;color:#999;display: inline-block;margin-left: 8px;text-decoration:line-through;}
+            }
+            img{width: 200px;height: 200px;}
+        }
+    }
+    
 }

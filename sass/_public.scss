@@ -58,7 +58,7 @@ header{width:100%;height:30px;background: #e5e5e5;font-size:12px;line-height: 30
     .gwc:hover div{display: block;position: absolute;bottom:-46px;right: 0;background:url(../image/car.png) no-repeat 5px 11px }    
 }
 nav{
-    width:1263px;height:40px;border-bottom: 2px solid #db1052 ;
+    width:1263px;height:40px;border-bottom: 2px solid #db1052 ;margin:0 auto;
     li{float:left}
     a{display:block;height:40px;line-height: 40px;cursor: pointer;font-size:16px;}
     li:first-child{float:left;margin-left: 32px;width:213px;padding-left: 20px;background:black;color:#fff;line-height: 40px;font-size: 12px;}

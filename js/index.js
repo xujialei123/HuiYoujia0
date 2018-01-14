@@ -155,6 +155,7 @@ define(function(){
 			$('.second').html(s)
 		},1000)
 	}
+	
 	return {
 		fn :Slider,
 		clone:clone,

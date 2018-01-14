@@ -18,6 +18,7 @@ require(['jquery','cookie','index','common','login'],function($,cookie,index,com
 		new index.fn('lunbo5');
 		new index.fn('lunbo6');
 		common.scroll(),
+		common.loadpage(),
 		index.link(),
 		index.time
 		})

@@ -14,7 +14,7 @@ define(function(){
 		
 	}	
 	function link(){
-		$('body a').attr('href','product.html')
+		
 		$('body .login').attr('href','login.html')
 		$('body .register').attr('href','register.html')
 		$('body .index').attr('href','../index.html')
@@ -22,9 +22,32 @@ define(function(){
 			location.href = 'cart.html'
 		})
 	}
+	function loadpage(){
+		
+		
+		var cartstr = $.cookie('cart') ? $.cookie('cart'):"";
+		var cartobj = strtoobj(cartstr);
+		var num = 0 ;
+		for(var id in cartobj){
+			num+= parseInt(cartobj[id].num)
+		}
+		$('header a:eq(4)').html(num)
+		$('.gwc span').html(num)
+		if(Number($('.gwc span').html())!=0){
+			$('.gwc div').css('display','none')
+		}
+	}
+	function strtoobj(str){
+		if(!str){
+			return {}
+		}else{
+			return JSON.parse(str)
+		}
+	}
 	return {
 		scroll:scroll,
-		link:link
+		link:link,
+		loadpage:loadpage
 	}
 	
 })
