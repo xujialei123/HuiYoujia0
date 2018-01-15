@@ -45,7 +45,7 @@ define(function(){
 		
 		
 		var re = /^\d+$/
-		$('.Num').val()>0
+		
 		$('.Num').blur(function(){
 			if(re.test($('.Num').val())&&$('.Num').val()>0){
 			$('.Num').val($('.Num').val())
@@ -56,6 +56,9 @@ define(function(){
 		$('.jian').click(function(){
 			
 			$('.Num').val($('.Num').val()-1)
+			if($('.Num').val()<1){
+				$('.Num').val(1)
+			}
 		})
 		$('.jia').click(function(){
 			$('.Num').val(Number($('.Num').val())+1)

@@ -5,6 +5,7 @@ define(function(){
 		var qpw = null;
 		var yzm = null;
 		var yz = null;
+		var flag = true;
 		var abmit = null;
 		var random =parseInt(Math.random()*10000)
 		var rancolor ="#"+Math.ceil(Math.random()*0xffffff).toString(16)
@@ -79,16 +80,15 @@ define(function(){
 //				abmit = false
 //			})
 //		})
-		
-		$('.zc').click(function(){
-			$('#abmit').click(function(){
-			$("#abmit").attr('checked','checked')
-			abmit =true
-			$(this).click(function(){
-				$("#abmit").attr('checked')
+		$("#abmit").click(function(){
+			if(flag){
+				abmit =true
+			}else{
 				abmit = false
-			})
+			}
+			flag = !flag
 		})
+		$('.zc').click(function(){
 			if($('#yanzheng').val()==randomnum&&$('#yanzheng').val()!=''){
 				yz=true
 			}else{

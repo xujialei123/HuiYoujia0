@@ -19,7 +19,8 @@ define(function(){
 		$('body .register').attr('href','register.html')
 		$('body .index').attr('href','../index.html')
 		$('.gocart').attr('href','cart.html')
-		$('#kefu').attr('href','javascript:;')
+		$('#kefu,.jian,.jia').attr('href','javascript:;')
+		
 		$('#kefu').click(function(){
 			 window.open ('kefu.html', 'newwindow', 'height=545, width=720, top=132, left=196, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no')
 		})
