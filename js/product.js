@@ -18,8 +18,12 @@ define(function(){
 		}
 	}
 	function click(){
-//		var oLi = document.getElementById("product_list").getElementsByTagName('li')
-//		var oUl = document.getElementById("product_list")
+		function getele(){
+		var oLi = document.getElementById("product_list").getElementsByTagName('li')
+		var oUl = document.getElementById("product_list")
+		return oLi
+		}
+		getele()
 		$('.more').click(function(){
 			$(this).parent().siblings('.p2').css('display','block')
 			$(this).css('display','none')
@@ -28,11 +32,12 @@ define(function(){
 		$(this).parent().css('display','none')
 		$(this).parent().prev().find('.more').css('display','inline-block')
 	})
-		$('.l1').click(function(){
-//			$('#product_list li').remove()
-//			for(var i=oLi.lenth-1;i>=0;i--){
-//				oUl.appendChild(oLi[i])
-//			}
+		$('.l1').click(function(){	
+			var oLi = $('#product_list li')
+			$('#product_list li').remove()
+			for(var i=oLi.lenth-1;i>=0;i--){
+				oUl.appendChild(oLi[i])
+			}
 			$(this).css({
 				'background':'#fff',
 				'height':47,

@@ -23,10 +23,6 @@ h1, h2, h3, h4, h5, h6 {
 a, u {
   text-decoration: none; }
 
-a:hover {
-  color: red;
-  text-decoration: underline; }
-
 input {
   outline: none;
   border: none; }
@@ -81,6 +77,9 @@ header {
   line-height: 30px;
   color: #77686b;
   margin: 0 auto; }
+  header a:hover {
+    color: red;
+    text-decoration: underline; }
   header a {
     color: #77686b; }
   header a:first-child {
@@ -208,18 +207,90 @@ header {
       text-align: center;
       line-height: 18px;
       color: #fff; }
-    #sousuo .gwc div {
+    #sousuo .gwc .none {
       position: absolute;
       height: 43px;
       width: 360px;
       border: 1px solid #e8e8e8;
       display: none; }
-  #sousuo .gwc:hover div {
+  #sousuo .none {
     display: block;
     position: absolute;
     bottom: -46px;
     right: 0;
     background: url(../image/car.png) no-repeat 5px 11px; }
+  #sousuo .cartxiangqing {
+    width: 311px;
+    height: 389px;
+    position: absolute;
+    top: 43px;
+    right: 0;
+    background: #fff;
+    z-index: 9000;
+    display: none; }
+    #sousuo .cartxiangqing > * {
+      padding: 0 11px; }
+    #sousuo .cartxiangqing h2 {
+      height: 42px;
+      line-height: 42px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+      text-align: left; }
+    #sousuo .cartxiangqing dl {
+      height: 83px;
+      border-bottom: 1px solid #E5E5E5; }
+      #sousuo .cartxiangqing dl dt {
+        height: 61px;
+        float: left;
+        margin-right: 22px; }
+        #sousuo .cartxiangqing dl dt img {
+          width: 61px;
+          height: 61px;
+          float: left;
+          margin-right: 8px; }
+        #sousuo .cartxiangqing dl dt p {
+          font-size: 12px;
+          float: left;
+          width: 124px;
+          height: 61px;
+          line-height: 18px;
+          text-align: left; }
+      #sousuo .cartxiangqing dl dd {
+        float: left; }
+        #sousuo .cartxiangqing dl dd p {
+          line-height: 18px; }
+        #sousuo .cartxiangqing dl dd b {
+          display: block;
+          color: #e82d65; }
+    #sousuo .cartxiangqing .gotocart {
+      position: absolute;
+      bottom: 0;
+      padding: 9px 14px;
+      background: #e5e5e5;
+      width: 283px; }
+      #sousuo .cartxiangqing .gotocart li {
+        font-size: 12px;
+        float: left;
+        line-height: 12px; }
+        #sousuo .cartxiangqing .gotocart li i {
+          display: block;
+          margin-bottom: 8px; }
+          #sousuo .cartxiangqing .gotocart li i font {
+            font-weight: 600; }
+        #sousuo .cartxiangqing .gotocart li em {
+          display: block; }
+          #sousuo .cartxiangqing .gotocart li em b {
+            font-size: 14px;
+            color: #df2950; }
+      #sousuo .cartxiangqing .gotocart a {
+        display: block;
+        width: 90px;
+        height: 30px;
+        color: #fff;
+        float: right;
+        background: #df2950;
+        line-height: 30px; }
 
 nav {
   width: 1263px;
@@ -476,6 +547,7 @@ nav {
     height: 559px;
     border: 1px solid #e5e5e5;
     top: 40px;
+    left: 0;
     border-top: none;
     display: none;
     z-index: 100; }
@@ -567,3 +639,99 @@ nav {
       line-height: 15px;
       color: #999;
       text-align: left; }
+  .you .jiesuan {
+    width: 1140px;
+    background: #FFF;
+    margin-bottom: 20px;
+    line-height: 52px;
+    height: 52px;
+    padding: 23px 0;
+    overflow: hidden; }
+    .you .jiesuan a:hover {
+      text-decoration: none; }
+    .you .jiesuan .div:first-child {
+      float: left; }
+      .you .jiesuan .div:first-child label {
+        display: block;
+        width: 75px;
+        float: left;
+        font-size: 14px;
+        color: #333; }
+      .you .jiesuan .div:first-child a {
+        font-size: 14px;
+        color: #333; }
+    .you .jiesuan .paymoney {
+      color: #999;
+      font-size: 18px;
+      float: right;
+      line-height: 68px; }
+      .you .jiesuan .paymoney .s1 {
+        margin-right: 40px; }
+      .you .jiesuan .paymoney em {
+        font-size: 30px;
+        color: #dc0f50;
+        font-weight: bold; }
+      .you .jiesuan .paymoney .jiesuanbtn {
+        width: 120px;
+        height: 52px;
+        line-height: 52px;
+        background: #dc0f50;
+        text-align: center;
+        font-size: 20px;
+        color: #fff;
+        position: relative;
+        top: -14px; }
+      .you .jiesuan .paymoney .jiesuanbtn:hover {
+        background: deeppink; }
+      .you .jiesuan .paymoney * {
+        display: inline-block; }
+
+.cont {
+  display: block;
+  width: 520px;
+  height: 290px;
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  z-index: 200;
+  margin: -150px 0 0 -260px; }
+  .cont h2 {
+    height: 34px;
+    background: #f5f5f5;
+    line-height: 34px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #333; }
+    .cont h2 span {
+      float: right;
+      color: #333; }
+  .cont #message p {
+    text-align: center;
+    line-height: 178px;
+    height: 170px;
+    font-size: 18px;
+    color: #666; }
+    .cont #message p span {
+      display: inline-block;
+      height: 28px;
+      width: 28px;
+      vertical-align: middle;
+      margin-right: 10px;
+      background: url(../image/tanhao.png) no-repeat; }
+  .cont #message b {
+    text-align: center;
+    display: block;
+    height: 40px; }
+    .cont #message b i {
+      display: inline-block;
+      margin: 0 16px;
+      width: 150px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: #fff;
+      font-size: 18px;
+      background: #dc0f50; }

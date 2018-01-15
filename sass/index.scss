@@ -72,15 +72,16 @@
         p{font-size: 14px;padding-top: 8px;float:left}
         div{border-bottom: 1px solid #e5e5e5;width:770px;height:21px;float: left;}
     }
-    .list-wp{width:11340px;height:270px;margin-top: 33px;margin-left: 36px;position: absolute;top: 20px;
-        dl{width:202px;height:270px;float:left;margin-right: 36px;
-        
+    .list-wp{width:11900px;height:270px;margin-top: 33px;position: absolute;top: 20px;
+        dl{float: left;width:200px;margin:0 24px 0 14px;
             img{width:200px;height:200px;}
             img:hover{width:210px;height: 210px;}
             dt{position: relative;overflow: hidden;width:200px;height:200px;
                 i{display:block;width:60px;height:24px;background:#db6b8f;position: absolute;right:0;bottom: 0;text-align: center;color: #fff;}
             }
             dd{width:202px;height:60px;position: relative;margin-top: 5px;
+                a{display: block;padding: 5px 0;line-height: 21px;height: 40px;overflow: hidden;font-size: 14px}
+                a:hover{text-decoration: none;}
                 em{position: absolute;left: 0;bottom: 0;color:red}
                 span{width:60px;height: 60px;position: absolute;right: 0;top: 0;background:#eb2b28;text-align: center;font-size: 18px;color: #fff;line-height: 30px;}
             }
@@ -122,17 +123,20 @@ dl{height:94px;border-bottom: 1px solid #e5e5e5;width:300px;padding-top: 5px;
     
 }
 }
-#like{
-    width:1200px;height: 320px;margin:54px auto;position: relative;overflow:hidden ;
-    span{top:125px}
-    div{width:3525px;margin-left: 30px;position: absolute;top:30px;
-        dl{width:200px;height: 270px;margin-right: 35px;float: left;
-            dt{width:200px;height:200px;overflow: hidden;}
-            dd{width:200px;height: 72px;position: relative;
-            p{font-size: 12px;margin-top: 10px;}
-            em{font-size: 16px;margin-top: 12px;color:#d7114f}
+#like_box{height: 362px;width: 1200px;margin:0 auto;position: relative;overflow: hidden;
+span{top:112px}
+    .hd{height: 21px;background: url(../image/hd_bg.jpg) repeat-x 88px bottom;}
+    h2{height: 22px;font-size: 22px;line-height: 22px;background: #fff;width: 88px;}
+    ul{width:4760px;height: 298px;position: absolute;top: 50px;
+        
+        li{float: left;width:200px;margin:0 24px 0 14px;
+            a:hover{text-decoration: none;}
+            p{width:200px;height: 50px;font-size: 12px;color:#333}
+            em{height: 27px;display: block;font-size: 14px;color:#dc0f50;
+                i{font-size: 8px;color:#999;display: inline-block;margin-left: 8px;text-decoration:line-through;}
             }
+            img{width: 200px;height: 200px;}
         }
     }
-    img{width:200px;height: 200px;}
-    img:hover{width:210px;height: 210px;}}
+    
+}

@@ -67,13 +67,15 @@ define(function(){
 		//抢购克隆
 		for(let i = 0;i<49;i++){
 			var dl = $('#jiu').clone(true);
+			dl.find('img').attr('src','image/index'+(i+1)+'.jpg')
 			$('.list-wp').append(dl)
 		}		
 		var left = $('.list-wp').offset().left
 		$('#qianggou .left').click(function(){
-			left = left-1134;
-			if(left<-10206){
-				left=36
+			if(left==0){
+				left=-10710
+			}else{
+				left+=1190
 			}
 			$('.list-wp').animate({
 				left:left
@@ -81,10 +83,10 @@ define(function(){
 			return left
 		})
 		$('#qianggou .right').click(function(){
-			if(left==0){
-				left=-10206
+			if(left==-10710){
+				left=0
 			}else{
-				left=left+1134
+				left-=1190
 			}
 			
 			$('.list-wp').animate({
@@ -93,53 +95,58 @@ define(function(){
 			return left
 		})
 		//喜欢克隆
-		for(let i = 0;i<14;i++){
-			var dl = $('#like div dl:eq(0)').clone(true);
-			$('#like div').append(dl)
+		for(var i = 51;i<=70;i++){
+			var li=$("#like_box li:eq(0)").clone(true);
+			li.find('img').attr('src','image/'+i+'.jpg')
+			$('#like_box ul').append(li)
 		}
-		var left1 = 0
-		$('#like .left').click(function(){
-			left1-=1180;
-			if(left1<-2385){
-				left1=0
+				var left = 0;
+		$('#like_box .left').click(function(){
+			if(left==0){
+				left = -3570
+			}else{
+				left+=1190
 			}
-			$("#like div").animate({
-				left:left1
-			})
-			return left1
+			$('#like_box ul').animate({'left':left})
+			return left
 		})
-		$('#like .right').click(function(){
-			if(left1==0){
-				left1=-2385
-			}else if(left1>-1205){
-				left1=-2385
+		$('#like_box .right').click(function(){
+			if(left==-3570){
+				left = 0
+			}else{
+				left-=1190
 			}
-			else{
-				left1+=1180
-			}
-			$("#like div").animate({
-				left:left1
-			})
+			$('#like_box ul').animate({'left':left})
+			return left
 		})
 		
 	}
 	function clone2(){
 		for(let j = 0;j<4;j++){
 			var d=$(".hot dl:eq(0)").clone(true);
+			d.find('img').attr('src','image/r'+(j+1)+'.jpg')
 			$('.hot').append(d)
 		}
 		for(var i =0;i<4;i++){
 			var floor = $('#f1').clone(true);
-			floor.attr('id',"f"+(i+2))
+			floor.attr('id',"f"+(i+2)).find('')
 			floor.insertAfter($("#f"+(i+1)))
 			$("#f"+(i+2)+' .lunbo div').attr('id','lunbo'+(i+3))
 		}
 	}
 	function link(){
+		$('#kefu').click(function(){
+			 window.open ('html/kefu.html', 'newwindow', 'height=545, width=720, top=132, left=196, toolbar=no, menubar=no, scrollbars=no, resizable=no,location=n o, status=no')
+		})
+		$('.btn').click(function(){
+			location.href='html/register.html'
+		})
 		$('body a').attr('href','html/product.html')
 		$('body .login').attr('href','html/login.html')
 		$('body .register').attr('href','html/register.html')
 		$('body .index').attr('href',"index.html")
+		$('.gocart').attr('href','html/cart.html')
+		$('#kefu').attr('href','javascript:;')
 		$('.gwc').click(function(){
 			location.href = 'html/cart.html'
 		})

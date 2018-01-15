@@ -45,6 +45,7 @@ define(function(){
 		
 		
 		var re = /^\d+$/
+		$('.Num').val()>0
 		$('.Num').blur(function(){
 			if(re.test($('.Num').val())&&$('.Num').val()>0){
 			$('.Num').val($('.Num').val())

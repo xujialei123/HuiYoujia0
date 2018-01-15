@@ -3,6 +3,15 @@ define(function(){
 		var pm = null ;
 		var pw = null;
 		var qpw = null;
+		var yzm = null;
+		var yz = null;
+		var abmit = null;
+		var random =parseInt(Math.random()*10000)
+		var rancolor ="#"+Math.ceil(Math.random()*0xffffff).toString(16)
+		var color = "#"+Math.ceil(Math.random()*0xffffff).toString(16)
+		var randomnum = parseInt(Math.random()*1000000)
+		$('.random').html(random).css({'background-color':rancolor,'color':color})
+		
 		$('#mobile').blur(function(){
 			
 		var reg = /^((156)|(158)|(188)|(135)|(177)|(133)|(155))[0-9]{8}$/;
@@ -15,6 +24,16 @@ define(function(){
 			pm=false
 		}
 	})
+		$('.random').siblings('input').blur(function(){
+			if($(this).val()!=random){
+				$('.random').next('span').html('图形验证码不正确请重新输入');
+				yzm = false
+			}else{
+				$('.random').next('span').html('');
+				yzm = true
+			}
+			
+		})
 		$("#pwd").blur(function(){
 			var reg = /^[\S]{6,16}$/;
 			if(reg.test($("#pwd").val())){
@@ -43,14 +62,49 @@ define(function(){
 				qpw=false
 			}else{qpw=true}
 		})
+		$('.got').click(function(){
+			$('.got').siblings('i').html(randomnum).css('background',"#"+Math.ceil(Math.random()*0xffffff).toString(16))
+			
+		})
+//		if($('#abmit').attr('checked','checked')){
+//			abmit=true
+//		}else{
+//			abmit = false
+//		}
+//		$('#abmit').click(function(){
+//			$("#abmit").attr('checked','checked')
+//			abmit =true
+//			$(this).click(function(){
+//				$("#abmit").attr('checked')
+//				abmit = false
+//			})
+//		})
+		
 		$('.zc').click(function(){
+			$('#abmit').click(function(){
+			$("#abmit").attr('checked','checked')
+			abmit =true
+			$(this).click(function(){
+				$("#abmit").attr('checked')
+				abmit = false
+			})
+		})
+			if($('#yanzheng').val()==randomnum&&$('#yanzheng').val()!=''){
+				yz=true
+			}else{
+				yz=false
+				alert('验证码错误')
+			}		
 			var username = $('#mobile').val();
 			var pwd = $('#pwd').val();
-			if(!(pw&&pm&&qpw)){
+			if(!(pw&&pm&&qpw&&yzm&&yz&&abmit)){
 				if(pw&qpw){
 					$('#mobile').siblings('span').html("请输入11位有效手机号");
 				}else if(pm){
 					$('#pwd').siblings('span').html("请输入密码")
+				}if(!abmit){
+					alert('请同意协议')
+					return 
 				}
 				return
 			}

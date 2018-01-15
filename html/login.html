@@ -13,7 +13,7 @@
 			<a href="" class='register'>请登录</a>
 			<a href="" class="login">免费注册</a>
 			
-			购物车<a href="">0</a>件
+			购物车<a href="" class="gocart">0</a>件
 			<span class='my'>我的家有</span>
 			可用购物券<a href="">0</a>张
 			<a href="" class='sc'>我的收藏</a>
@@ -43,18 +43,31 @@
 			</div>
 			
 			<div class="gwc">我的购物车<span>0</span>
-				<div>购物车中还没有商品，赶紧去选购吧 </div>
-			</div>	
+				<div class="none">购物车中还没有商品，赶紧去选购吧 </div>
+				<div class="cartxiangqing">
+					<h2>最新加入商品</h2>
+					<div class="cartlist">
+						
+					</div>
+					<div class="gotocart">
+						<li>
+							<i>共<font></font>件商品</i>
+							<em>合计<b></b>元</em>
+						</li>
+						<a href="" class="gocart">去购物车</a>
+					</div>
+				</div>
+			</div>
 		</div>
 		<hr />
 		<div id="login">
 			<div>
-				<p>*您的手机号&nbsp;&nbsp;<input type="text"  id="mobile" placeholder="请输入11位有效的手机号码"/><span></span></p>
-				<p>*图片验证码&nbsp;&nbsp;<input type="text" id='ma' placeholder="请输入图片验证码"/><span></span></p>
+				<p>*您的手机号&nbsp;&nbsp;<input type="text"  id="mobile" placeholder="请输入11位有效的手机号码" autocomplete="off"/><span></span></p>
+				<p>*图片验证码&nbsp;&nbsp;<input type="text" id='ma' placeholder="请输入图片验证码" autocomplete="off"/><span class='random'></span><span></span></p>
 				<p>*请设置密码&nbsp;&nbsp;<input type="password" id="pwd" placeholder="请输入6-16个字符，不能添加空格哦"/><span></span></p>
 				<p>*请确认密码&nbsp;&nbsp;<input type="password" id="qpwd" placeholder="请确认密码" /><span></span></p>
-				<p>*输入验证码&nbsp;&nbsp;<input type="text" id="yanzheng" /><em>获取验证码</em></p>
-				<p><input type="radio" id='abmit'/>我已阅读并同意<a href="">《会员注册协议》</a>和<a href="">《隐私保护政策》</a> </p>
+				<p>*输入验证码&nbsp;&nbsp;<input type="text" id="yanzheng" autocomplete="off"/><em class="got">获取验证码</em><i></i></p>
+				<p><input type="checkbox" id='abmit' autocomplete="off"/>我已阅读并同意<a href="">《会员注册协议》</a>和<a href="">《隐私保护政策》</a> </p>
 				<p class='zc'>注册</p>
 				<a href="" class="register">我已注册，立即登录</a>
 			</div>
