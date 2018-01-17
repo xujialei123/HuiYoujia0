@@ -7,7 +7,7 @@ define(function(){
 		var yz = null;
 		var flag = true;
 		var abmit = null;
-		var random =parseInt(Math.random()*10000)
+		var random = parseInt(Math.random()*10000)
 		var rancolor ="#"+Math.ceil(Math.random()*0xffffff).toString(16)
 		var color = "#"+Math.ceil(Math.random()*0xffffff).toString(16)
 		var randomnum = parseInt(Math.random()*1000000)
@@ -25,8 +25,12 @@ define(function(){
 			pm=false
 		}
 	})
+		$(".random").click(function(){
+			$('.random').html(parseInt(Math.random()*10000))
+			$('.random').css('background',"#"+Math.ceil(Math.random()*0xffffff).toString(16))
+		})
 		$('.random').siblings('input').blur(function(){
-			if($(this).val()!=random){
+			if($(this).val()!=$('.random').html()){
 				$('.random').next('span').html('图形验证码不正确请重新输入');
 				yzm = false
 			}else{
