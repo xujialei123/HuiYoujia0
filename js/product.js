@@ -1,11 +1,19 @@
 define(function(){
 	
 	function clone(){
-		for(var i = 2;i<=20;i++){
-			var li = $('#product_list li:eq(0)').clone(true);
-			li.find('img').attr('src','../image/'+i+'.jpg')
-			$('#product_list').append(li)
-		}
+		$.get('../product.json',function(data){
+			$(data).each(function(index,value){
+				var li = `<li>
+						<a href="">
+							<img src="../image/${value.src}.jpg" alt="" />
+							<p title="${value.name}">${value.name}</p>
+							<b><i>￥${value.price}</i>￥${value.origin}</b>
+							<span>月销${value.num}件</span>	
+						</a>
+					</li>`;
+					$('#product_list').append(li)
+			})
+		})
 		for(var i=41;i<50;i++){
 			var li =$('.rxb li:eq(0)').clone(true);
 			li.find('img').attr('src','../image/'+i+'.jpg').css('border-top','none')
@@ -30,6 +38,7 @@ define(function(){
 			$('#product_list li').each(function(){
 				$(this).prependTo('#product_list')
 			})
+//			$('#product_list li').get().reverse()
 			$(this).css({
 				'background':'#fff',
 				'height':47,
